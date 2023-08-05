@@ -1,10 +1,13 @@
 html, body {
-    background-color: #222 !important;
+    /* background-color: #222 !important; */
     color: #bbb;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
+#contact-form h2 {
+    color : #000;
+}
 
 #contact-form * { 
     transition:all .3s ease;
@@ -32,7 +35,7 @@ html, body {
 
 
 #contact-form {
-    background: #333;
+    background: #37f;
 }
 
 #contact-form input {    
@@ -40,10 +43,10 @@ html, body {
     width:500px;
     margin: 3px;
     font-size: 1.3em;
-    font-family: 'roboto' ;
+    font-family: 'verdana' ;
     padding: 15px;
-    color: #3af; 
-    background: linear-gradient(#444, #111 );
+    color: #000; 
+    /* background: linear-gradient(#3af, #37f ); */
 }
 
 #contact-form textarea {
@@ -51,20 +54,20 @@ html, body {
     width:500px;
     margin: 3px;
     font-size: 1.3em;
-    font-family: 'roboto' ;
+    font-family: 'verdana' ;
     padding: 15px;
-    color: #3af; 
-    background: linear-gradient(#444, #111 );    
+    color: #000; 
+    /* background: linear-gradient(#3af, #37f );     */
 }
 
 
 #contact-form button {    
     width:500px;
     font-size: 1.3em;
-    font-family: 'roboto' ;
+    font-family: 'Arial' ;
     padding: 15px;
-    color: #3af; 
-    background: linear-gradient(#444, #111 );
+    color: #000; 
+    /* background: linear-gradient(#3af, #37f ); */
 }
 
 
