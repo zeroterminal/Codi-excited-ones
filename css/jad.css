@@ -15,8 +15,7 @@ html, body {
 }
 
 @keyframes form-on-focus {
-    0% {
-        display: block;
+    0% {        
         background: #070707;
     }
     
