@@ -1,0 +1,108 @@
+:root {
+  --header-text-clr: #e5e5e5;
+  --header-clr: #2370e3;
+}
+* :hover {
+  cursor: default;
+}
+html,
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+#website-wrapper {
+  padding: 0 3rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-clr);
+  padding: 0 3rem;
+}
+#logo-svg {
+  font-size: 50px;
+}
+#nav-container > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 3rem;
+}
+li > a {
+  text-decoration: none;
+  position: relative;
+  color: var(--header-text-clr);
+}
+a:hover {
+  cursor: pointer;
+}
+a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--header-text-clr);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animate the underline on hover */
+a:hover::before {
+  transform: scaleX(1); /* Expand the underline on hover */
+}
+
+li > a:visited {
+  color: var(--header-text-clr);
+}
+
+#gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+.categories-container {
+  width: 70%;
+}
+.category-header {
+  background-color: wheat;
+  background-color: #062655;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.category-wrapper{
+    background-image: url(../assets/scattered-forcefields.png);
+    background-position: 40% 10% ;
+    border-radius:20px ;
+    padding: 10px;
+}
+.img-container {
+  display: flex;
+  justify-content: space-between;
+}
+.img-container > img {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+}
+.btn {
+  width: 10rem;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0;
+  background-color: var(--header-clr);
+  color: var(--header-text-clr);
+}
